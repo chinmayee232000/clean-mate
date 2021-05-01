@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clean_mate2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cleanmate2">
+        <activity android:name=".donePage"></activity>
+        <activity android:name=".update_prices" />
+        <activity android:name=".payment_status" />
+        <activity android:name=".viewOrder" />
+        <activity android:name=".adminDashboard2" />
+        <activity android:name=".adminDashboard" />
+        <activity android:name=".ShowUploads" />
+        <activity android:name=".AddImages" />
+        <activity android:name=".PaymentWindow" />
+        <activity android:name=".Dashboard1" />
+        <activity android:name=".register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
